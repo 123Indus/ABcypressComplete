@@ -15,6 +15,13 @@ jobs:
         with:
           build: npm run test:addToCart
 
+      - name: Cypress add to cart Report
+          if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MochaAwesome HTML Report
+          path: cypress/reports/html
+
     register-run:
      runs-on: ubuntu-22.04
      steps:
@@ -26,3 +33,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run test:Register
+
+      - name: Cypress register Report
+          if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MochaAwesome HTML Report
+          path: cypress/reports/html
