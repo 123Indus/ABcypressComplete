@@ -16,7 +16,7 @@ jobs:
           build: npm run test:addToCart
 
       - name: Cypress Test Report
-           uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
            with:
               name: MochaAwesome HTML Report
               path: cypress/reports/html
