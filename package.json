@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addCart.cy.js",
-    "test:Register": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.js",
+    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addCart.cy.js --headed --browser chrome",
+    "test:Register": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.js --headed --browser chrome",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
